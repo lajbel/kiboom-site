@@ -5,15 +5,14 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Kiboom Docs',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/lajbel/juicy-beat',
 			},
 			sidebar: [
 				{
 					label: 'Guides',
 					items: [
-						// Each item here is one entry in the navigation menu.
 						{ label: 'Example Guide', link: '/guides/example/' },
 					],
 				},
