@@ -9,15 +9,16 @@ of all other makers in kiboom, and probably **should be the base maker** of
 your own makers.
 
 `makeObject()` returns a new game object, with these default components: 
-[PosComp](https://kaboomjs.com/#PosComp),
-[ScaleComp](https://kaboomjs.com/#ScaleComp),
-[AnchorComp](https://kaboomjs.com/#AnchorComp),
-[RotationComp](https://kaboomjs.com/#RotationComp) and
-[ZComp](https://kaboomjs.com/#ZComp),
+
+
+- [PosComp](https://kaboomjs.com/#PosComp)
+- [ScaleComp](https://kaboomjs.com/#ScaleComp)
+- [AnchorComp](https://kaboomjs.com/#AnchorComp)
+- [RotationComp](https://kaboomjs.com/#RotationComp)
+- [ZComp](https://kaboomjs.com/#ZComp)
 
 These are the typical transform components of a game object in other engines,
-like Unity. You can also pass tags. See all options in the 
-<a href="https://lajbel.github.io/kiboom/types/ObjOpt.html" target="_blank">API</a>
+like Unity.
 
 ```js
 const myObject = makeObject({

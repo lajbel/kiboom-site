@@ -50,12 +50,13 @@ export default defineConfig({
                 {
                     label: "Object Makers",
                     autogenerate: {
+                        collapsed: false,
                         directory: "objects",
                     },
                 },
                 {
                     label: "Reference Docs",
-                    link: "https://lajbel.github.io/kiboom",
+                    link: "https://ref.kiboom.lajbel.com",
                     attrs: {
                         target: "_blank",
                     },

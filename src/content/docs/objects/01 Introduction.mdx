@@ -1,0 +1,40 @@
+---
+title: Maker functions
+description: An introduction to the new way of creating objects in Kaboom.js
+---
+import { Aside } from "@astrojs/starlight/components"
+
+
+To understand the base of kiboom, you need to understand the `make()` function.
+It receives a components array like `add()`, but doesn't add the object to the
+scene.
+
+```js
+const bean = k.make([
+  k.pos(100, 100),
+  k.sprite("bean"),
+]);
+
+k.add(bean);
+```
+
+## Object Maker
+
+An Object Maker is a function that receives a configuration and returns
+a new fgame object using `make()`. It have benefits, like be extendable and
+modifiable. Kiboom provides a set of object makers, like `makeSprite`,
+`makeText`, all of thems are extended from the base maker, `makeObject`.
+
+```js
+const myObject = k.makeSprite({
+  pos: k.vec2(100, 100),  // from makeObject()
+  sprite: "player",       // from makeSprite()
+});
+```
+
+<Aside type="note" >
+This is the same "prefab" concept in other engines like Unity.
+</Aside>
+
+The maker functions will speed up your development, and make your code more
+cleaner, also improves modulization. 

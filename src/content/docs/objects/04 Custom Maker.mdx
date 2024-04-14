@@ -1,0 +1,24 @@
+---
+title: Creating makers
+description: Create your own maker functions in kiboom
+---
+
+kiboom has the possibility to create your own maker functions, 
+this is a powerful feature that can save you a lot of time.
+
+For create a maker, we recommend extend the base maker, `makeObject`, so we use
+the `extendMaker()` function.
+
+> extendMaker(baseMaker, defaultOpt, componentsApply) | 
+[In API](https://ref.kiboom.lajbel.com/functions/extendMaker.html)
+
+- `baseMaker`: The base maker to extend.
+- `defaultOpt`: The default options for the new maker.
+- `componentsApply`: The components to apply in the new maker.
+
+```js
+const makeBulletOptions = makeOptions(() => ({
+    speed: 100,
+    damage: 10,
+}));
+```
