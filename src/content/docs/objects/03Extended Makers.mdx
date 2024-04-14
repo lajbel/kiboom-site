@@ -27,3 +27,35 @@ const child = myParent.add(makeObject({
 Make render is another used as base maker, it extends `makeObject` and adds color
 and opacity components. I don't recommend use it directly, but you can use it
 in other makers as `makeSprite` or `makeText`.
+
+```js
+// Make a sprite
+
+const mySprite = k.add(makeSprite({
+    pos: vec2(100, 100),   // from makeObject
+    sprite: "player",      // from makeSprite
+    color: "#ffffff",      // from makeRender
+    opacity: 0.5,          // from makeRender
+}));
+
+// Make a text
+
+const myText = k.add(makeText({
+    pos: vec2(100, 100),   // from makeObject
+    text: "Hello world!",  // from makeText
+    color: "#fffffff",     // from makeRender
+    opacity: 0.5,          // from makeRender
+}));
+```
+
+## makeArea()
+
+Useful for create areas, like collision areas, or areas for interact with the player.
+
+```js
+const myArea = k.add(makeArea({
+    pos: vec2(100, 100),  // from makeObject
+    width: 50,            // from makeArea
+    height: 50,           // from makeArea
+}));
+```
