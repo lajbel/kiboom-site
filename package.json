@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "typedoc-plugin-merge-modules": "^5.1.0",
-    "typedoc-plugin-not-exported": "^0.1.6"
+    "typedoc-plugin-not-exported": "^0.1.6",
+    "wrangler": "^3.50.0"
   }
 }
