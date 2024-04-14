@@ -1,0 +1,29 @@
+---
+title: Extended Makers
+description: All about the other makers of kiboom, `makeObject`
+---
+
+The idea of kiboom is create your own maker functions, but we provide a set of
+general use makers that you can use in your game. All of them extends
+`makeObject`, there's an introduction to the most important ones.
+
+## makeObject()
+
+`makeObject()`, as we saw, creates a game object with some base transform 
+components. Is useful for use as a parent object, and also extend it.
+
+```js
+const myParent = k.add(makeObject({
+    pos: vec2(100, 100),}
+));
+
+const child = myParent.add(makeObject({
+    pos: vec2(50, 50), // real position: 150, 150
+}));
+```
+
+## makeRender()
+
+Make render is another used as base maker, it extends `makeObject` and adds color
+and opacity components. I don't recommend use it directly, but you can use it
+in other makers as `makeSprite` or `makeText`.

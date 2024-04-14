@@ -1,0 +1,39 @@
+---
+title: Installation
+description: How to install kiboom
+---
+import { PackageManagers } from 'starlight-package-managers'
+
+
+This plugin is only compatible with the version 3000 of Kaboom.js,
+so make sure you have it installed.
+
+## Installation
+<PackageManagers pkg="kiboom" />
+
+## Usage
+
+We recommend have a separate file for the engine, and another for the game.
+
+```js
+// engine.js
+import kaboom from "kaboom";
+import { kiboom } from "kiboom";
+
+export const k = kaboom({
+    // This loads your plugin
+    plugins: [ kiboom ],
+});
+
+```
+
+```js
+// game.js
+// This should be your entry file
+import k from "./engine.js";
+
+k.add(k.makeSprite({
+    pos: k.vec2(100, 100),
+    sprite: "player",
+}));
+```

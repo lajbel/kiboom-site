@@ -1,0 +1,40 @@
+---
+title: The base maker
+description: All about the base maker of kiboom, `makeObject`
+---
+import { Aside } from '@astrojs/starlight/components';
+
+Makers can be extendable, and the base maker is `makeObject`. This is the base
+of all other makers in kiboom, and probbably **should be the base maker** of
+your own makers.
+
+`makeObject()` returns a new game object, with these default components: 
+[PosComp](https://kaboomjs.com/#PosComp),
+[ScaleComp](https://kaboomjs.com/#ScaleComp),
+[AnchorComp](https://kaboomjs.com/#AnchorComp),
+[RotationComp](https://kaboomjs.com/#RotationComp) and
+[ZComp](https://kaboomjs.com/#ZComp),
+
+These are the typical transform components of a game object in other engines,
+like Unity. You can also pass tags. See all options in the 
+<a href="https://lajbel.github.io/kiboom/types/ObjOpt.html" target="_blank">API</a>
+
+```js
+const myObject = makeObject({
+    pos: vec2(100, 100),
+    scale: vec2(2, 2),
+    anchor: "center",
+    rotate: 90,
+    z: 1,
+    tags: [ "entity" ],
+});
+```
+
+<Aside type="tip">
+By default, all kiboom objects are anchored at center! This will save you
+a lot of `anchor()` components.
+</Aside>
+
+If you will set in all your game objects the same components, **why don't use a
+base for all?** This is the idea of `makeObject`, and all other makers in kiboom.
+

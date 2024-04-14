@@ -1,33 +1,60 @@
 ---
-title: kiboom()
+title: Kaboom.js object makers made easy
 description: The new way for creating objects in Kaboom.js
 template: splash
 hero:
-  tagline: The new way for creating objects in Kaboom.js
+  tagline: The new way for creating objects in Kaboom.js, object makers as a prefab system for your game
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/kiboomlogo.png
   actions:
     - text: Get started
-      link: /guides/introduction/
+      link: /start
       icon: right-arrow
       variant: primary
+    - text: Reference
+      link: https://lajbel.github.io/kiboom/
+      icon: external
+      variant: secondary
 ---
 
+import { Code } from "@astrojs/starlight/components";
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+<CardGrid>
+  <Card title="Feels native" icon="star">
+    Using the functional approach of Kaboom.js, kiboom feels like a native part 
+    of the engine.
+  </Card>
+  <Card title="Extendable" icon="puzzle">
+    Create, merge and extend your object makers.
+  </Card>
 </CardGrid>
+
+## Example
+
+export const exampleCode = `
+// Create a bullet maker
+const makeBullet = extendMaker(makeObject, () => {
+  power: 1,
+}, (opt) => [
+  area({ shape: new Rect(vex2(0), opt.size, opt.size) }),
+  damage(opt.power),
+]);
+
+// Use maker
+add(makeBullet({
+  pos: vec2(10, 10),
+  power: 4,
+}));
+
+// As a children
+gun.add(makeBullet({
+  pos: vec2(20, 20),
+  power: gun.power,
+}));
+`;
+export const fileName = 'example.js';
+export const highlights = ['file', 'CMS'];
+
+<Code code={exampleCode} lang="js" title={fileName} mark={highlights} />

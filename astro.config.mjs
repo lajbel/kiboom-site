@@ -1,27 +1,67 @@
 import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
+import starlightTypeDoc, { typeDocSidebarGroup } from "starlight-typedoc";
 
 // https://astro.build/config
 export default defineConfig({
     integrations: [
         starlight({
-            title: "Kiboom Docs",
+            plugins: [
+                // Generate the documentation.
+                starlightTypeDoc({
+                    entryPoints: [
+                        "../kiboom/docs.json",
+                    ],
+                    typeDoc: {
+                        plugin: [
+                            "typedoc-plugin-merge-modules",
+                        ],
+                        mergeModulesRenameDefaults: false,
+                        mergeModulesMergeMode: "project",
+                        entryPointStrategy: "merge",
+                    },
+                    tsconfig: "../kiboom/tsconfig.json",
+                    includeTag: "internalDoNotUse",
+                }),
+            ],
+            title: "Docs",
+            logo: {
+                src: "./src/assets/kiboomlogo.png",
+                replacesTitle: true,
+            },
+
+            customCss: [
+                "./src/styles/custom.css",
+            ],
             social: {
-                github: "https://github.com/lajbel/juicy-beat",
+                github: "https://github.com/lajbel/kiboom",
+                discord: "https://kaboomjs.com/discord",
             },
             sidebar: [
                 {
-                    label: "Guides",
-                    items: [
-                        {
-                            label: "Introduction",
-                            link: "/guides/introduction/",
-                        },
-                    ],
+                    label: "Getting Started",
+                    link: "/start/",
                 },
                 {
-                    label: "Reference",
-                    autogenerate: { directory: "reference" },
+                    label: "Installation",
+                    link: "/install/",
+                },
+                {
+                    label: "Object Makers",
+                    autogenerate: {
+                        directory: "objects",
+                    },
+                },
+                {
+                    label: "Reference Docs",
+                    link: "https://lajbel.github.io/kiboom",
+                    attrs: {
+                        target: "_blank",
+                    },
+                    badge: {
+                        text: "External",
+                        variant: "tip",
+                    },
                 },
             ],
         }),
