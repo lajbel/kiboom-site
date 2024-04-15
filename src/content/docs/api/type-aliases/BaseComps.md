@@ -11,4 +11,4 @@ The components of the base object
 
 ## Source
 
-kiboom.d.ts:28
+kiboom.d.ts:31

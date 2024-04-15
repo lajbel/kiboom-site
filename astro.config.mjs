@@ -55,15 +55,7 @@ export default defineConfig({
                     },
                 },
                 {
-                    label: "Reference Docs",
-                    link: "https://kiboom-ref.pages.dev",
-                    attrs: {
-                        target: "_blank",
-                    },
-                    badge: {
-                        text: "External",
-                        variant: "tip",
-                    },
+                    ...typeDocSidebarGroup,
                 },
             ],
         }),

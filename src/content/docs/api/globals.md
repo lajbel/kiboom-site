@@ -37,6 +37,7 @@ title: "kiboom"
 
 - [ApplierFN](type-aliases/ApplierFN.md)
 - [BaseComps](type-aliases/BaseComps.md)
+- [ChildrenDefinition](type-aliases/ChildrenDefinition.md)
 - [HasOptionalKey](type-aliases/HasOptionalKey.md)
 - [MakerFN](type-aliases/MakerFN.md)
 - [OptionFN](type-aliases/OptionFN.md)
@@ -45,7 +46,11 @@ title: "kiboom"
 
 ## Functions
 
+- [children](functions/children.md)
+- [custom](functions/custom.md)
+- [kiScene](functions/kiScene.md)
 - [kiboom](functions/kiboom.md)
+- [makeOptions](functions/makeOptions.md)
 
 ## Base
 

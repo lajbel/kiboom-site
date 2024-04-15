@@ -19,4 +19,4 @@ The radius of the circle
 
 ## Source
 
-kiboom.d.ts:61
+kiboom.d.ts:64

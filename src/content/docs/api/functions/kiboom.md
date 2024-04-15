@@ -17,4 +17,4 @@ title: "kiboom"
 
 ## Source
 
-kiboom.d.ts:108
+kiboom.d.ts:123

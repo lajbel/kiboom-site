@@ -37,7 +37,7 @@ const clickableArea = k.add(makeArea({
 
 ##### Source
 
-kiboom.d.ts:151
+kiboom.d.ts:166
 
 ***
 
@@ -58,7 +58,7 @@ Make a background object.
 
 ##### Source
 
-kiboom.d.ts:207
+kiboom.d.ts:222
 
 ***
 
@@ -79,7 +79,7 @@ Make an object with a circle component.
 
 ##### Source
 
-kiboom.d.ts:183
+kiboom.d.ts:198
 
 ***
 
@@ -114,7 +114,7 @@ myParent.add(k.makeSprite({
 
 ##### Source
 
-kiboom.d.ts:135
+kiboom.d.ts:150
 
 ***
 
@@ -135,7 +135,7 @@ Make an object with a rectangle component.
 
 ##### Source
 
-kiboom.d.ts:175
+kiboom.d.ts:190
 
 ***
 
@@ -164,7 +164,7 @@ use the other render makers instead:
 
 ##### Source
 
-kiboom.d.ts:167
+kiboom.d.ts:182
 
 ***
 
@@ -185,7 +185,7 @@ Make an object with a sprite component.
 
 ##### Source
 
-kiboom.d.ts:199
+kiboom.d.ts:214
 
 ***
 
@@ -206,7 +206,118 @@ Make an object with a text component.
 
 ##### Source
 
-kiboom.d.ts:191
+kiboom.d.ts:206
+
+## Methods
+
+### children()
+
+> **children**(`childrens`): `EmptyComp`
+
+A component for define a childrens
+
+#### Parameters
+
+• **childrens**: [`ChildrenDefinition`](../type-aliases/ChildrenDefinition.md)\<`Comp`[]\>
+
+#### Returns
+
+`EmptyComp`
+
+#### Source
+
+kiboom.d.ts:254
+
+***
+
+### custom()
+
+> **custom**\<`T`\>(`custom`): `Comp` & `T`
+
+A component for define a custom component
+
+#### Type parameters
+
+• **T**
+
+#### Parameters
+
+• **custom**
+
+#### Returns
+
+`Comp` & `T`
+
+#### Source
+
+kiboom.d.ts:250
+
+***
+
+### kiScene()
+
+`Alpha`
+
+> **kiScene**\<`T`\>(`name`, `def`): () => `void`
+
+Create an scene with an SceneManager
+
+ In development
+
+:::caution[Alpha]
+This API should not be used in production and may be trimmed from a public release.
+:::
+
+#### Type parameters
+
+• **T** extends `Object`
+
+#### Parameters
+
+• **name**: `string`
+
+• **def**
+
+#### Returns
+
+`Function`
+
+> ##### Returns
+>
+> `void`
+>
+
+:::caution[Alpha]
+This API should not be used in production and may be trimmed from a public release.
+:::
+
+#### Source
+
+kiboom.d.ts:246
+
+***
+
+### makeOptions()
+
+> **makeOptions**\<`T`\>(`opt`): [`OptionFN`](../type-aliases/OptionFN.md)\<`T`\>
+
+Create a options object
+
+#### Type parameters
+
+• **T**
+
+#### Parameters
+
+• **opt**
+
+#### Returns
+
+[`OptionFN`](../type-aliases/OptionFN.md)\<`T`\>
+
+#### Source
+
+kiboom.d.ts:258
 
 ## Base
 
@@ -244,7 +355,7 @@ Extend a maker with new components.
 
 ##### Source
 
-kiboom.d.ts:225
+kiboom.d.ts:240
 
 ***
 
@@ -276,4 +387,4 @@ The default options for the maker
 
 ##### Source
 
-kiboom.d.ts:216
+kiboom.d.ts:231

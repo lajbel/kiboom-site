@@ -43,4 +43,4 @@ The z index of the object
 
 ## Source
 
-kiboom.d.ts:15
+kiboom.d.ts:18

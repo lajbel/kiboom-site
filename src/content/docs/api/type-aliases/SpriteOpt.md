@@ -19,4 +19,4 @@ The sprite name
 
 ## Source
 
-kiboom.d.ts:87
+kiboom.d.ts:90

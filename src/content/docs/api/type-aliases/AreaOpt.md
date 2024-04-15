@@ -17,4 +17,4 @@ The options of the area object
 
 ## Source
 
-kiboom.d.ts:34
+kiboom.d.ts:37

@@ -25,4 +25,4 @@ title: "ApplierFN"
 
 ## Source
 
-kiboom.d.ts:6
+kiboom.d.ts:9

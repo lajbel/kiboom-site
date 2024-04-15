@@ -37,4 +37,4 @@ The size of the text
 
 ## Source
 
-kiboom.d.ts:98
+kiboom.d.ts:101

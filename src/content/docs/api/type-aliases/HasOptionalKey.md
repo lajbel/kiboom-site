@@ -13,4 +13,4 @@ title: "HasOptionalKey"
 
 ## Source
 
-kiboom.d.ts:8
+kiboom.d.ts:11

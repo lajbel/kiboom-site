@@ -21,4 +21,4 @@ title: "OptionFN"
 
 ## Source
 
-kiboom.d.ts:9
+kiboom.d.ts:12

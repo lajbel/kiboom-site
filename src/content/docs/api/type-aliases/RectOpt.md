@@ -25,4 +25,4 @@ The width of the rect
 
 ## Source
 
-kiboom.d.ts:72
+kiboom.d.ts:75

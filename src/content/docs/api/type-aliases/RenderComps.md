@@ -9,4 +9,4 @@ title: "RenderComps"
 
 ## Source
 
-kiboom.d.ts:47
+kiboom.d.ts:50

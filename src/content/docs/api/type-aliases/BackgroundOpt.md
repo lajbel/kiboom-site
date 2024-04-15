@@ -17,4 +17,4 @@ The options of the background object
 
 ## Source
 
-kiboom.d.ts:53
+kiboom.d.ts:56

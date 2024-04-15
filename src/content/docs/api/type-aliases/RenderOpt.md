@@ -25,4 +25,4 @@ The options of the render object
 
 ## Source
 
-kiboom.d.ts:42
+kiboom.d.ts:45
