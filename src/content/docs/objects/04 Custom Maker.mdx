@@ -10,15 +10,40 @@ For create a maker, we recommend extend the base maker, `makeObject`, so we use
 the `extendMaker()` function.
 
 > extendMaker(baseMaker, defaultOpt, componentsApply) | 
-[In API](https://ref.kiboom.lajbel.com/functions/extendMaker.html)
+[In API](https://https://kiboom-ref.pages.dev/functions/extendMaker.html)
 
 - `baseMaker`: The base maker to extend.
-- `defaultOpt`: The default options for the new maker.
+- `defaultOpt`: The default options for the new maker. You must use 
+`makeOptions`
 - `componentsApply`: The components to apply in the new maker.
 
 ```js
-const makeBulletOptions = makeOptions(() => ({
+// We create some options with defaults
+const makeEnemyOpt = makeOptions(() => ({
     speed: 100,
-    damage: 10,
+    hp: 100,
+}));
+
+// We create the new maker
+const makeEnemy = extendMaker(makeObject, makeEnemyOpt, (opt) => [
+    // here our components list
+    hp(opt.hp),
+    move(LEFT, opt.speed),
+]);
+
+// Now we can use our new maker
+k.add(makeEnemy({
+    hp: 200,             // We can override our maker options
+    speed: 200,          // We can override our maker options
+    pos: vec2(100, 100), // We can modify the base options of makeObject
+    anchor: "topleft",   // We can modify the base options of makeObject
 }));
 ```
+
+In the example above, we create a new maker called `makeEnemy`, this maker
+extends the `makeObject` maker, and adds the `hp` and `move` components, and 
+also a `speed` and `hp` options.
+
+The idea is to create a maker that is easy to use and that can be reused in
+different parts of the game. Also you should extend the most useful maker for
+you, it can be `makeObject`, `makeSprite`, `makeText`, etc.
