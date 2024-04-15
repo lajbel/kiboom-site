@@ -12,7 +12,7 @@ hero:
       icon: right-arrow
       variant: primary
     - text: Reference
-      link: https://https://kiboom-ref.pages.dev/
+      link: https://kiboom-ref.pages.dev/
       icon: external
       variant: secondary
 ---
@@ -24,34 +24,43 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 <CardGrid>
   <Card title="Feels native" icon="star">
     Using the functional approach of Kaboom.js, kiboom feels like a native part 
-    of the engine.
+    of the library.
   </Card>
   <Card title="Extendable" icon="puzzle">
     Create, merge and extend your object makers.
+  </Card>
+  <Card title="Easy to use" icon="rocket">
+    Create your own maker functions with a few lines of code.
+  </Card>
+  <Card title="Typed" icon="seti:typescript" >
+    Full TypeScript support out of the box.
   </Card>
 </CardGrid>
 
 ## Example
 
 export const exampleCode = `
-// Create a bullet maker
-const makeBullet = extendMaker(makeObject, () => {
-  power: 1,
-}, (opt) => [
-  area({ shape: new Rect(vex2(0), opt.size, opt.size) }),
-  damage(opt.power),
-]);
+// Create a enemy maker
 
-// Use maker
-add(makeBullet({
-  pos: vec2(10, 10),
-  power: 4,
+// We create some options with defaults
+const makeEnemyOpt = makeOptions(() => ({
+    speed: 100,
+    hp: 100,
 }));
 
-// As a children
-gun.add(makeBullet({
-  pos: vec2(20, 20),
-  power: gun.power,
+// We create the new maker
+const makeEnemy = extendMaker(makeObject, makeEnemyOpt, (opt) => [
+    // here our components list
+    hp(opt.hp),
+    move(LEFT, opt.speed),
+]);
+
+// Now we can use our new maker
+k.add(makeEnemy({
+    hp: 200,             // We can override our maker options
+    speed: 200,          // We can override our maker options
+    pos: vec2(100, 100), // We can modify the base options of makeObject
+    anchor: "topleft",   // We can modify the base options of makeObject
 }));
 `;
 export const fileName = 'example.js';

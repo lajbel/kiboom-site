@@ -56,7 +56,7 @@ export default defineConfig({
                 },
                 {
                     label: "Reference Docs",
-                    link: "https://https://kiboom-ref.pages.dev",
+                    link: "https://kiboom-ref.pages.dev",
                     attrs: {
                         target: "_blank",
                     },
