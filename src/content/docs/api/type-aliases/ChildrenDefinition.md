@@ -9,7 +9,9 @@ title: "ChildrenDefinition"
 
 ## Type parameters
 
-• **T** extends `Comp`[]
+| Type parameter |
+| :------ |
+| `T` extends `Comp`[] |
 
 ## Index signature
 

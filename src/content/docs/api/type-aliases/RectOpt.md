@@ -11,18 +11,11 @@ The options of the rect object
 
 ## Type declaration
 
-### height
-
-> **height**: `number`
-
-The height of the rect
-
-### width
-
-> **width**: `number`
-
-The width of the rect
+| Member | Type | Description |
+| :------ | :------ | :------ |
+| `height` | `number` | The height of the rect |
+| `width` | `number` | The width of the rect |
 
 ## Source
 
-kiboom.d.ts:75
+kiboom.d.ts:78

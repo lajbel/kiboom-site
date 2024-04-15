@@ -9,15 +9,17 @@ title: "ApplierFN"
 
 ## Type parameters
 
-• **TComps**
-
-• **TOpt**
+| Type parameter |
+| :------ |
+| `TComps` |
+| `TOpt` |
 
 ## Parameters
 
-• **opt**: `Required`\<`TOpt`\>
-
-• **k**: `KaboomCtx`
+| Parameter | Type |
+| :------ | :------ |
+| `opt` | `Required`\<`TOpt`\> |
+| `k` | `KaboomCtx` |
 
 ## Returns
 

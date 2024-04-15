@@ -19,13 +19,16 @@ This API should not be used in production and may be trimmed from a public relea
 
 ## Type parameters
 
-• **T** extends `Object`
+| Type parameter |
+| :------ |
+| `T` extends `Object` |
 
 ## Parameters
 
-• **name**: `string`
-
-• **def**
+| Parameter | Type |
+| :------ | :------ |
+| `name` | `string` |
+| `def` | (`sceneData`, ...`args`) => `void` |
 
 ## Returns
 

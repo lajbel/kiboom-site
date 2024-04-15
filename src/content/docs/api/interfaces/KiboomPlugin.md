@@ -11,6 +11,29 @@ The kiboom Kaboom's plugin
 
 ### Object Makers
 
+#### makeBg()
+
+> **makeBg**(`opt`?): `GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `RectComp`\>
+
+Make a color background object.
+*Maker extends [makeRender](../../../../../api/functions/makerender)*
+
+##### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `opt`? | [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md) & [`BackgroundOpt`](../type-aliases/BackgroundOpt.md) |
+
+##### Returns
+
+`GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `RectComp`\>
+
+##### Source
+
+kiboom.d.ts:242
+
+### Other
+
 #### makeArea()
 
 > **makeArea**(`opt`): `GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & `AreaComp`\>
@@ -20,7 +43,9 @@ Make an object with a collider component.
 
 ##### Parameters
 
-• **opt**: [`ObjOpt`](../type-aliases/ObjOpt.md) & [`AreaOpt`](../type-aliases/AreaOpt.md)
+| Parameter | Type |
+| :------ | :------ |
+| `opt` | [`ObjOpt`](../type-aliases/ObjOpt.md) & [`AreaOpt`](../type-aliases/AreaOpt.md) |
 
 ##### Returns
 
@@ -30,56 +55,13 @@ Make an object with a collider component.
 
 ```js
 const clickableArea = k.add(makeArea({
-  width: 100,
-  height: 100,
+    size: k.vec2(100, 100),
 }));
 ```
 
 ##### Source
 
-kiboom.d.ts:166
-
-***
-
-#### makeBg()
-
-> **makeBg**(`opt`?): `GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `RectComp`\>
-
-Make a background object.
-*Maker extends [makeRender](../../../../../api/functions/makerender)*
-
-##### Parameters
-
-• **opt?**: [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md) & [`BackgroundOpt`](../type-aliases/BackgroundOpt.md)
-
-##### Returns
-
-`GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `RectComp`\>
-
-##### Source
-
-kiboom.d.ts:222
-
-***
-
-#### makeCircle()
-
-> **makeCircle**(`opt`): `GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md)\>
-
-Make an object with a circle component.
-*Maker extends [makeRender](../../../../../api/functions/makerender)*
-
-##### Parameters
-
-• **opt**: [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md) & [`CircleOpt`](../type-aliases/CircleOpt.md)
-
-##### Returns
-
-`GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md)\>
-
-##### Source
-
-kiboom.d.ts:198
+kiboom.d.ts:160
 
 ***
 
@@ -91,7 +73,9 @@ Make an object with the base components.
 
 ##### Parameters
 
-• **opt**: [`ObjOpt`](../type-aliases/ObjOpt.md)
+| Parameter | Type |
+| :------ | :------ |
+| `opt` | [`ObjOpt`](../type-aliases/ObjOpt.md) |
 
 ##### Returns
 
@@ -101,41 +85,18 @@ Make an object with the base components.
 
 ```js
 // Good for parent objects!
-
 const myParent = k.add(makeObject({
- pos: k.vec2(100, 100),
+    pos: k.vec2(100, 100),
 });
 
 myParent.add(k.makeSprite({
- sprite: "bean",
+    sprite: "bean",
 }));
-
 ```
 
 ##### Source
 
-kiboom.d.ts:150
-
-***
-
-#### makeRect()
-
-> **makeRect**(`opt`): `GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `RectComp`\>
-
-Make an object with a rectangle component.
-*Maker extends [makeRender](../../../../../api/functions/makerender)*
-
-##### Parameters
-
-• **opt**: [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md) & [`RectOpt`](../type-aliases/RectOpt.md)
-
-##### Returns
-
-`GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `RectComp`\>
-
-##### Source
-
-kiboom.d.ts:190
+kiboom.d.ts:146
 
 ***
 
@@ -156,7 +117,9 @@ use the other render makers instead:
 
 ##### Parameters
 
-• **opt?**: [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md)
+| Parameter | Type |
+| :------ | :------ |
+| `opt`? | [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md) |
 
 ##### Returns
 
@@ -164,49 +127,7 @@ use the other render makers instead:
 
 ##### Source
 
-kiboom.d.ts:182
-
-***
-
-#### makeSprite()
-
-> **makeSprite**(`opt`): `GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `SpriteComp`\>
-
-Make an object with a sprite component.
-*Maker extends [makeRender](../../../../../api/functions/makerender)*
-
-##### Parameters
-
-• **opt**: [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md) & [`SpriteOpt`](../type-aliases/SpriteOpt.md)
-
-##### Returns
-
-`GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `SpriteComp`\>
-
-##### Source
-
-kiboom.d.ts:214
-
-***
-
-#### makeText()
-
-> **makeText**(`opt`): `GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `TextComp`\>
-
-Make an object with a text component.
-*Maker extends [makeRender](../../../../../api/functions/makerender)*
-
-##### Parameters
-
-• **opt**: [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md) & [`TextOpt`](../type-aliases/TextOpt.md)
-
-##### Returns
-
-`GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `TextComp`\>
-
-##### Source
-
-kiboom.d.ts:206
+kiboom.d.ts:175
 
 ## Methods
 
@@ -218,7 +139,9 @@ A component for define a childrens
 
 #### Parameters
 
-• **childrens**: [`ChildrenDefinition`](../type-aliases/ChildrenDefinition.md)\<`Comp`[]\>
+| Parameter | Type |
+| :------ | :------ |
+| `childrens` | [`ChildrenDefinition`](../type-aliases/ChildrenDefinition.md)\<`Comp`[]\> |
 
 #### Returns
 
@@ -226,7 +149,7 @@ A component for define a childrens
 
 #### Source
 
-kiboom.d.ts:254
+kiboom.d.ts:274
 
 ***
 
@@ -238,11 +161,15 @@ A component for define a custom component
 
 #### Type parameters
 
-• **T**
+| Type parameter |
+| :------ |
+| `T` |
 
 #### Parameters
 
-• **custom**
+| Parameter | Type |
+| :------ | :------ |
+| `custom` | () => `T` |
 
 #### Returns
 
@@ -250,7 +177,7 @@ A component for define a custom component
 
 #### Source
 
-kiboom.d.ts:250
+kiboom.d.ts:270
 
 ***
 
@@ -270,13 +197,16 @@ This API should not be used in production and may be trimmed from a public relea
 
 #### Type parameters
 
-• **T** extends `Object`
+| Type parameter |
+| :------ |
+| `T` extends `Object` |
 
 #### Parameters
 
-• **name**: `string`
-
-• **def**
+| Parameter | Type |
+| :------ | :------ |
+| `name` | `string` |
+| `def` | (`sceneData`, ...`args`) => `void` |
 
 #### Returns
 
@@ -293,7 +223,40 @@ This API should not be used in production and may be trimmed from a public relea
 
 #### Source
 
-kiboom.d.ts:246
+kiboom.d.ts:266
+
+***
+
+### makeCircle()
+
+> **makeCircle**(`opt`): `GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md)\>
+
+Make an object with a circle component.
+*Maker extends [makeRender](../../../../../api/functions/makerender)*
+
+#### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `opt` | [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md) & [`CircleOpt`](../type-aliases/CircleOpt.md) |
+
+#### Returns
+
+`GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md)\>
+
+#### Example
+
+```js
+const circle = k.add(k.makeCircle(\{
+    radius: 50,       // from makeCircle
+    color: "#ff00ff", // from makeRender
+\}));
+
+@group Object Makers
+
+#### Source
+
+kiboom.d.ts:204
 
 ***
 
@@ -305,11 +268,15 @@ Create a options object
 
 #### Type parameters
 
-• **T**
+| Type parameter |
+| :------ |
+| `T` |
 
 #### Parameters
 
-• **opt**
+| Parameter | Type |
+| :------ | :------ |
+| `opt` | (`k`) => `Partial`\<`T`\> |
 
 #### Returns
 
@@ -317,7 +284,109 @@ Create a options object
 
 #### Source
 
-kiboom.d.ts:258
+kiboom.d.ts:278
+
+***
+
+### makeRect()
+
+> **makeRect**(`opt`): `GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `RectComp`\>
+
+Make an object with a rectangle component.
+*Maker extends [makeRender](../../../../../api/functions/makerender)*
+
+#### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `opt` | [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md) & [`RectOpt`](../type-aliases/RectOpt.md) |
+
+#### Returns
+
+`GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `RectComp`\>
+
+#### Example
+
+```js
+const rect = k.add(k.makeRect(\{
+    width: 100,       // from makeRect
+    height: 100,      // from makeRect
+    color: "#ff00ff", // from makeRender
+\}));
+
+@group Object Makers
+
+#### Source
+
+kiboom.d.ts:190
+
+***
+
+### makeSprite()
+
+> **makeSprite**(`opt`): `GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `SpriteComp`\>
+
+Make an object with a sprite component.
+*Maker extends [makeRender](../../../../../api/functions/makerender)*
+
+#### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `opt` | [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md) & [`SpriteOpt`](../type-aliases/SpriteOpt.md) |
+
+#### Returns
+
+`GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `SpriteComp`\>
+
+#### Example
+
+```js
+const sprite = k.add(k.makeSprite(\{
+    sprite: "bean",        // from makeSprite
+    scale: 2,              // from makeRender
+    pos: k.vec2(100, 100), // from makeObject
+\}));
+
+@group Object Makers
+
+#### Source
+
+kiboom.d.ts:234
+
+***
+
+### makeText()
+
+> **makeText**(`opt`): `GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `TextComp`\>
+
+Make an object with a text component.
+*Maker extends [makeRender](../../../../../api/functions/makerender)*
+
+#### Parameters
+
+| Parameter | Type |
+| :------ | :------ |
+| `opt` | [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md) & [`TextOpt`](../type-aliases/TextOpt.md) |
+
+#### Returns
+
+`GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `TextComp`\>
+
+#### Example
+
+```js
+const text = k.add(k.makeText(\{
+    text: "Hello, world!", // from makeText
+    size: 24,              // from makeText
+    opacity: 0,            // from makeRender
+\}));
+
+@group Object Makers
+
+#### Source
+
+kiboom.d.ts:219
 
 ## Base
 
@@ -331,23 +400,21 @@ Extend a maker with new components.
 
 ##### Type parameters
 
-• **TBaseComps**
-
-• **TBaseOpt**
-
-• **TNewComps**
-
-• **TNewOpt**
+| Type parameter |
+| :------ |
+| `TBaseComps` |
+| `TBaseOpt` |
+| `TNewComps` |
+| `TNewOpt` |
 
 ##### Parameters
 
-• **baseMaker**: [`MakerFN`](../type-aliases/MakerFN.md)\<`TBaseOpt`, `TBaseComps`\>
-
-• **defaultOpt**: [`OptionFN`](../type-aliases/OptionFN.md)\<`TNewOpt`\>
-
-• **componentsApply**: [`ApplierFN`](../type-aliases/ApplierFN.md)\<`TNewComps`, `TNewOpt` & `TBaseOpt`\>
-
-• **baseDefaultOpt?**: [`OptionalOptionFN`](../type-aliases/OptionalOptionFN.md)\<`TBaseOpt`\>
+| Parameter | Type |
+| :------ | :------ |
+| `baseMaker` | [`MakerFN`](../type-aliases/MakerFN.md)\<`TBaseOpt`, `TBaseComps`\> |
+| `defaultOpt` | [`OptionFN`](../type-aliases/OptionFN.md)\<`TNewOpt`\> |
+| `componentsApply` | [`ApplierFN`](../type-aliases/ApplierFN.md)\<`TNewComps`, `TNewOpt` & `TBaseOpt`\> |
+| `baseDefaultOpt`? | [`OptionalOptionFN`](../type-aliases/OptionalOptionFN.md)\<`TBaseOpt`\> |
 
 ##### Returns
 
@@ -355,7 +422,7 @@ Extend a maker with new components.
 
 ##### Source
 
-kiboom.d.ts:240
+kiboom.d.ts:260
 
 ***
 
@@ -369,17 +436,17 @@ mantain the base options.
 
 ##### Type parameters
 
-• **TComps**
-
-• **TOpt**
+| Type parameter |
+| :------ |
+| `TComps` |
+| `TOpt` |
 
 ##### Parameters
 
-• **defaultOpt**: [`OptionFN`](../type-aliases/OptionFN.md)\<`TOpt`\>
-
-The default options for the maker
-
-• **componentsApply**: [`ApplierFN`](../type-aliases/ApplierFN.md)\<`TComps`, `TOpt`\>
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `defaultOpt` | [`OptionFN`](../type-aliases/OptionFN.md)\<`TOpt`\> | The default options for the maker |
+| `componentsApply` | [`ApplierFN`](../type-aliases/ApplierFN.md)\<`TComps`, `TOpt`\> | - |
 
 ##### Returns
 
@@ -387,4 +454,4 @@ The default options for the maker
 
 ##### Source
 
-kiboom.d.ts:231
+kiboom.d.ts:251

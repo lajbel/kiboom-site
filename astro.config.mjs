@@ -7,6 +7,9 @@ export default defineConfig({
     site: "https://kiboom.lajbel.com/",
     integrations: [
         starlight({
+            components: {
+                Hero: "./src/components/Hero.astro",
+            },
             plugins: [
                 // Generate the documentation.
                 starlightTypeDoc({
@@ -19,15 +22,29 @@ export default defineConfig({
                         ],
                         mergeModulesRenameDefaults: false,
                         mergeModulesMergeMode: "project",
+                        mergeModulesRenameDefaults: false,
+                        mergeModulesMergeMode: "project",
                         entryPointStrategy: "merge",
+                        categorizeByGroup: true,
+                        parametersFormat: "table",
+                        propertiesFormat: "list",
+                        enumMembersFormat: "table",
+                        typeDeclarationFormat: "table",
+                        excludePrivate: true,
+                        excludeProtected: true,
+                        useCodeBlocks: false,
                     },
                     tsconfig: "../kiboom/tsconfig.json",
                     includeTag: "internalDoNotUse",
+                    sidebar: {
+                        label: "API Reference",
+                        collapsed: true,
+                    },
                 }),
             ],
             title: "Docs",
             logo: {
-                src: "./src/assets/kiboomlogo.png",
+                src: "./src/assets/kiboom.png",
                 replacesTitle: true,
             },
 

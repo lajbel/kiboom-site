@@ -9,7 +9,9 @@ title: "OptionalOptionFN"
 
 ## Type parameters
 
-• **T**
+| Type parameter |
+| :------ |
+| `T` |
 
 ## Source
 

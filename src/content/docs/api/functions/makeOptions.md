@@ -11,11 +11,15 @@ Create a options object
 
 ## Type parameters
 
-• **T**
+| Type parameter |
+| :------ |
+| `T` |
 
 ## Parameters
 
-• **opt**
+| Parameter | Type |
+| :------ | :------ |
+| `opt` | (`k`) => `Partial`\<`T`\> |
 
 ## Returns
 

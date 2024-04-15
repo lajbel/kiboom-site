@@ -11,23 +11,21 @@ Extend a maker with new components.
 
 ## Type parameters
 
-• **TBaseComps**
-
-• **TBaseOpt**
-
-• **TNewComps**
-
-• **TNewOpt**
+| Type parameter |
+| :------ |
+| `TBaseComps` |
+| `TBaseOpt` |
+| `TNewComps` |
+| `TNewOpt` |
 
 ## Parameters
 
-• **baseMaker**: [`MakerFN`](../type-aliases/MakerFN.md)\<`TBaseOpt`, `TBaseComps`\>
-
-• **defaultOpt**: [`OptionFN`](../type-aliases/OptionFN.md)\<`TNewOpt`\>
-
-• **componentsApply**: [`ApplierFN`](../type-aliases/ApplierFN.md)\<`TNewComps`, `TNewOpt` & `TBaseOpt`\>
-
-• **baseDefaultOpt?**: [`OptionalOptionFN`](../type-aliases/OptionalOptionFN.md)\<`TBaseOpt`\>
+| Parameter | Type |
+| :------ | :------ |
+| `baseMaker` | [`MakerFN`](../type-aliases/MakerFN.md)\<`TBaseOpt`, `TBaseComps`\> |
+| `defaultOpt` | [`OptionFN`](../type-aliases/OptionFN.md)\<`TNewOpt`\> |
+| `componentsApply` | [`ApplierFN`](../type-aliases/ApplierFN.md)\<`TNewComps`, `TNewOpt` & `TBaseOpt`\> |
+| `baseDefaultOpt`? | [`OptionalOptionFN`](../type-aliases/OptionalOptionFN.md)\<`TBaseOpt`\> |
 
 ## Returns
 

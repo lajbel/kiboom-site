@@ -12,7 +12,9 @@ Make an object with a collider component.
 
 ## Parameters
 
-• **opt**: [`ObjOpt`](../type-aliases/ObjOpt.md) & [`AreaOpt`](../type-aliases/AreaOpt.md)
+| Parameter | Type |
+| :------ | :------ |
+| `opt` | [`ObjOpt`](../type-aliases/ObjOpt.md) & [`AreaOpt`](../type-aliases/AreaOpt.md) |
 
 ## Returns
 
@@ -22,8 +24,7 @@ Make an object with a collider component.
 
 ```js
 const clickableArea = k.add(makeArea({
-  width: 100,
-  height: 100,
+    size: k.vec2(100, 100),
 }));
 ```
 

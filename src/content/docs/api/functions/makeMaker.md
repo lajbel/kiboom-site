@@ -13,17 +13,17 @@ mantain the base options.
 
 ## Type parameters
 
-• **TComps**
-
-• **TOpt**
+| Type parameter |
+| :------ |
+| `TComps` |
+| `TOpt` |
 
 ## Parameters
 
-• **defaultOpt**: [`OptionFN`](../type-aliases/OptionFN.md)\<`TOpt`\>
-
-The default options for the maker
-
-• **componentsApply**: [`ApplierFN`](../type-aliases/ApplierFN.md)\<`TComps`, `TOpt`\>
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `defaultOpt` | [`OptionFN`](../type-aliases/OptionFN.md)\<`TOpt`\> | The default options for the maker |
+| `componentsApply` | [`ApplierFN`](../type-aliases/ApplierFN.md)\<`TComps`, `TOpt`\> | - |
 
 ## Returns
 

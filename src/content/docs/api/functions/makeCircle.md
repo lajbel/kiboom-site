@@ -12,11 +12,23 @@ Make an object with a circle component.
 
 ## Parameters
 
-• **opt**: [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md) & [`CircleOpt`](../type-aliases/CircleOpt.md)
+| Parameter | Type |
+| :------ | :------ |
+| `opt` | [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md) & [`CircleOpt`](../type-aliases/CircleOpt.md) |
 
 ## Returns
 
 `GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md)\>
+
+## Example
+
+```js
+const circle = k.add(k.makeCircle(\{
+    radius: 50,       // from makeCircle
+    color: "#ff00ff", // from makeRender
+\}));
+
+@group Object Makers
 
 ## Source
 

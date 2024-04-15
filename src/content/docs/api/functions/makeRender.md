@@ -20,7 +20,9 @@ use the other render makers instead:
 
 ## Parameters
 
-• **opt?**: [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md)
+| Parameter | Type |
+| :------ | :------ |
+| `opt`? | [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md) |
 
 ## Returns
 

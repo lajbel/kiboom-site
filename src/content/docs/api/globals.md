@@ -9,14 +9,13 @@ title: "kiboom"
 
 ### Object Makers
 
-- [makeArea](functions/makeArea.md)
 - [makeBg](functions/makeBg.md)
-- [makeCircle](functions/makeCircle.md)
+
+### Other
+
+- [makeArea](functions/makeArea.md)
 - [makeObject](functions/makeObject.md)
-- [makeRect](functions/makeRect.md)
 - [makeRender](functions/makeRender.md)
-- [makeSprite](functions/makeSprite.md)
-- [makeText](functions/makeText.md)
 
 ## Options
 
@@ -50,7 +49,11 @@ title: "kiboom"
 - [custom](functions/custom.md)
 - [kiScene](functions/kiScene.md)
 - [kiboom](functions/kiboom.md)
+- [makeCircle](functions/makeCircle.md)
 - [makeOptions](functions/makeOptions.md)
+- [makeRect](functions/makeRect.md)
+- [makeSprite](functions/makeSprite.md)
+- [makeText](functions/makeText.md)
 
 ## Base
 

@@ -11,7 +11,9 @@ Make an object with the base components.
 
 ## Parameters
 
-• **opt**: [`ObjOpt`](../type-aliases/ObjOpt.md)
+| Parameter | Type |
+| :------ | :------ |
+| `opt` | [`ObjOpt`](../type-aliases/ObjOpt.md) |
 
 ## Returns
 
@@ -21,15 +23,13 @@ Make an object with the base components.
 
 ```js
 // Good for parent objects!
-
 const myParent = k.add(makeObject({
- pos: k.vec2(100, 100),
+    pos: k.vec2(100, 100),
 });
 
 myParent.add(k.makeSprite({
- sprite: "bean",
+    sprite: "bean",
 }));
-
 ```
 
 ## Source

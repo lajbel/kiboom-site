@@ -11,9 +11,9 @@ The options of the area object
 
 ## Type declaration
 
-### size
-
-> **size**: `Vec2`
+| Member | Type | Description |
+| :------ | :------ | :------ |
+| `size` | `Vec2` | The size of the area |
 
 ## Source
 

@@ -9,13 +9,16 @@ title: "MakerFN"
 
 ## Type parameters
 
-• **TOpt**
-
-• **TComps**
+| Type parameter |
+| :------ |
+| `TOpt` |
+| `TComps` |
 
 ## Parameters
 
-• **opt**: `TOpt`
+| Parameter | Type |
+| :------ | :------ |
+| `opt` | `TOpt` |
 
 ## Returns
 

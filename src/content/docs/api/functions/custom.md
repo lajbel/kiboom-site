@@ -11,11 +11,15 @@ A component for define a custom component
 
 ## Type parameters
 
-• **T**
+| Type parameter |
+| :------ |
+| `T` |
 
 ## Parameters
 
-• **custom**
+| Parameter | Type |
+| :------ | :------ |
+| `custom` | () => `T` |
 
 ## Returns
 

@@ -5,7 +5,9 @@ template: splash
 hero:
   tagline: The new way for creating objects in Kaboom.js, object makers as a prefab system for your game
   image:
-    file: ../../assets/kiboomlogo.png
+    file: ../../assets/kiboombanner.png
+    alt: Kiboom logo
+    
   actions:
     - text: Get started
       link: /start
@@ -22,17 +24,17 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 
 
 <CardGrid>
-  <Card title="Feels native" icon="star">
-    Using the functional approach of Kaboom.js, kiboom feels like a native part 
+  <Card title="Kaboom-like" icon="star">
+    Using the functional approach of Kaboom.js, kiboom plugin feels like a native part 
     of the library.
   </Card>
-  <Card title="Extendable" icon="puzzle">
-    Create, merge and extend your object makers.
+  <Card title="Extendable API" icon="puzzle">
+    Create, merge and extend your object makers for create optionable objects
   </Card>
   <Card title="Easy to use" icon="rocket">
     Create your own maker functions with a few lines of code.
   </Card>
-  <Card title="Typed" icon="seti:typescript" >
+  <Card title="TypeScript Support" icon="seti:typescript" >
     Full TypeScript support out of the box.
   </Card>
 </CardGrid>

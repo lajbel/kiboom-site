@@ -11,12 +11,10 @@ The options of the sprite object
 
 ## Type declaration
 
-### sprite
-
-> **sprite**: `string`
-
-The sprite name
+| Member | Type | Description |
+| :------ | :------ | :------ |
+| `sprite` | `string` | The sprite name |
 
 ## Source
 
-kiboom.d.ts:90
+kiboom.d.ts:89

@@ -9,7 +9,9 @@ title: "HasOptionalKey"
 
 ## Type parameters
 
-• **T**
+| Type parameter |
+| :------ |
+| `T` |
 
 ## Source
 

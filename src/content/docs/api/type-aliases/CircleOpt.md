@@ -11,12 +11,10 @@ The options of the circle object
 
 ## Type declaration
 
-### radius
-
-> **radius**: `number`
-
-The radius of the circle
+| Member | Type | Description |
+| :------ | :------ | :------ |
+| `radius` | `number` | The radius of the circle |
 
 ## Source
 
-kiboom.d.ts:64
+kiboom.d.ts:69

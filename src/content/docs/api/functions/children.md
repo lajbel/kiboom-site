@@ -11,7 +11,9 @@ A component for define a childrens
 
 ## Parameters
 
-• **childrens**: [`ChildrenDefinition`](../type-aliases/ChildrenDefinition.md)\<`Comp`[]\>
+| Parameter | Type |
+| :------ | :------ |
+| `childrens` | [`ChildrenDefinition`](../type-aliases/ChildrenDefinition.md)\<`Comp`[]\> |
 
 ## Returns
 

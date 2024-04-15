@@ -9,7 +9,9 @@ title: "kiboom"
 
 ## Parameters
 
-• **k**: `KaboomCtx`
+| Parameter | Type |
+| :------ | :------ |
+| `k` | `KaboomCtx` |
 
 ## Returns
 
@@ -17,4 +19,4 @@ title: "kiboom"
 
 ## Source
 
-kiboom.d.ts:123
+kiboom.d.ts:122

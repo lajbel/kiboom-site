@@ -11,10 +11,10 @@ The options of the background object
 
 ## Type declaration
 
-### size?
-
-> **`optional`** **size**: `Vec2`
+| Member | Type | Description |
+| :------ | :------ | :------ |
+| `size` | `Vec2` | The size of the background |
 
 ## Source
 
-kiboom.d.ts:56
+kiboom.d.ts:60

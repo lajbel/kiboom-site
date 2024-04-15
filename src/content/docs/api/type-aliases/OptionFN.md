@@ -9,11 +9,15 @@ title: "OptionFN"
 
 ## Type parameters
 
-• **TOpt**
+| Type parameter |
+| :------ |
+| `TOpt` |
 
 ## Parameters
 
-• **k**: `KaboomCtx`
+| Parameter | Type |
+| :------ | :------ |
+| `k` | `KaboomCtx` |
 
 ## Returns
 
