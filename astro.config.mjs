@@ -49,6 +49,7 @@ export default defineConfig({
                         typeDeclarationFormat: "table",
                         excludePrivate: true,
                         excludeProtected: true,
+                        useCodeBlocks: false,
                         expandObjects: true,
                         externalSymbolLinkMappings: {
                             kaboom: kaboomDoc,
