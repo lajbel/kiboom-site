@@ -5,7 +5,11 @@ prev: false
 title: "RectOpt"
 ---
 
-> **RectOpt**: `Object`
+```ts
+type RectOpt: {
+  size: Vec2;
+};
+```
 
 The options of the rect object
 
@@ -13,9 +17,8 @@ The options of the rect object
 
 | Member | Type | Description |
 | :------ | :------ | :------ |
-| `height` | `number` | The height of the rect |
-| `width` | `number` | The width of the rect |
+| `size` | [`Vec2`]( https://kaboomjs.com/#Vec2 ) | The size of the rect |
 
 ## Source
 
-kiboom.d.ts:78
+kiboom.d.ts:108

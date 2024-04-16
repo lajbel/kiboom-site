@@ -7,11 +7,11 @@ title: "kiScene"
 
 `Alpha`
 
-> **kiScene**\<`T`\>(`name`, `def`): () => `void`
+```ts
+kiScene<T>(name, def): () => void
+```
 
 Create an scene with an SceneManager
-
- In development
 
 :::caution[Alpha]
 This API should not be used in production and may be trimmed from a public release.
@@ -21,7 +21,7 @@ This API should not be used in production and may be trimmed from a public relea
 
 | Type parameter |
 | :------ |
-| `T` extends `Object` |
+| `T` extends \{} |
 
 ## Parameters
 
@@ -38,10 +38,6 @@ This API should not be used in production and may be trimmed from a public relea
 >
 > `void`
 >
-
-:::caution[Alpha]
-This API should not be used in production and may be trimmed from a public release.
-:::
 
 ## Source
 

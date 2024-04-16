@@ -5,7 +5,11 @@ prev: false
 title: "CircleOpt"
 ---
 
-> **CircleOpt**: `Object`
+```ts
+type CircleOpt: {
+  radius: number;
+};
+```
 
 The options of the circle object
 
@@ -17,4 +21,4 @@ The options of the circle object
 
 ## Source
 
-kiboom.d.ts:69
+kiboom.d.ts:99

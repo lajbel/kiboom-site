@@ -5,7 +5,23 @@ prev: false
 title: "ApplierFN"
 ---
 
-> **ApplierFN**\<`TComps`, `TOpt`\>: (`opt`, `k`) => `CompList`\<`TComps`\>
+```ts
+type ApplierFN<TComps, TOpt>: (opt, k) => CompList<TComps>;
+```
+
+A function that applies components to a Game Object.
+
+## Example
+
+```js
+extendMaker(
+    makeBase,
+    randomOpt,
+    // This is the applier function
+    (opt, k) => [
+        sprite(opt.sprite),
+    ]);
+```
 
 ## Type parameters
 
@@ -19,7 +35,7 @@ title: "ApplierFN"
 | Parameter | Type |
 | :------ | :------ |
 | `opt` | `Required`\<`TOpt`\> |
-| `k` | `KaboomCtx` |
+| `k` | [`KaboomCtx`]( https://kaboomjs.com/ ) |
 
 ## Returns
 
@@ -27,4 +43,4 @@ title: "ApplierFN"
 
 ## Source
 
-kiboom.d.ts:9
+kiboom.d.ts:36

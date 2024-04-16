@@ -5,7 +5,11 @@ prev: false
 title: "OptionFN"
 ---
 
-> **OptionFN**\<`TOpt`\>: (`k`) => `TOpt`
+```ts
+type OptionFN<TOpt>: (k) => TOpt;
+```
+
+A function made with [makeOptions](../../../../../api/functions/makeoptions)
 
 ## Type parameters
 
@@ -17,7 +21,7 @@ title: "OptionFN"
 
 | Parameter | Type |
 | :------ | :------ |
-| `k` | `KaboomCtx` |
+| `k` | [`KaboomCtx`]( https://kaboomjs.com/ ) |
 
 ## Returns
 
@@ -25,4 +29,4 @@ title: "OptionFN"
 
 ## Source
 
-kiboom.d.ts:12
+kiboom.d.ts:40

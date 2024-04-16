@@ -5,7 +5,9 @@ prev: false
 title: "makeSprite"
 ---
 
-> **makeSprite**(`opt`): `GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `SpriteComp`\>
+```ts
+makeSprite(opt): GameObj<BaseComps & RenderComps & SpriteComp>
+```
 
 Make an object with a sprite component.
 *Maker extends [makeRender](../../../../../api/functions/makerender)*
@@ -14,11 +16,11 @@ Make an object with a sprite component.
 
 | Parameter | Type |
 | :------ | :------ |
-| `opt` | [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md) & [`SpriteOpt`](../type-aliases/SpriteOpt.md) |
+| `opt` | [`ObjOpt`](/api/type-aliases/objopt/) & [`RenderOpt`](/api/type-aliases/renderopt/) & [`SpriteOpt`](/api/type-aliases/spriteopt/) |
 
 ## Returns
 
-`GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `SpriteComp`\>
+[`GameObj`](https://kaboomjs.com/#GameObj)\<[`BaseComps`](/api/type-aliases/basecomps/) & [`RenderComps`](/api/type-aliases/rendercomps/) & [`SpriteComp`]( https://kaboomjs.com/#SpriteComp )\>
 
 ## Example
 

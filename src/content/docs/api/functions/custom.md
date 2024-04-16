@@ -5,7 +5,9 @@ prev: false
 title: "custom"
 ---
 
-> **custom**\<`T`\>(`custom`): `Comp` & `T`
+```ts
+custom<T>(custom): Comp & T
+```
 
 A component for define a custom component
 

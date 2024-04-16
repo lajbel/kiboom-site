@@ -5,7 +5,9 @@ prev: false
 title: "makeOptions"
 ---
 
-> **makeOptions**\<`T`\>(`opt`): [`OptionFN`](../type-aliases/OptionFN.md)\<`T`\>
+```ts
+makeOptions<T>(opt): OptionFN<T>
+```
 
 Create a options object
 
@@ -23,7 +25,19 @@ Create a options object
 
 ## Returns
 
-[`OptionFN`](../type-aliases/OptionFN.md)\<`T`\>
+[`OptionFN`](/api/type-aliases/optionfn/)\<`T`\>
+
+## Example
+
+```js
+const myOptions = k.makeOptions(k => (\{
+   pos: k.vec2(100, 100),
+   scale: 2,
+\}));
+
+const myObj = k.extendMaker(k.makeObject, myOptions, (comps, opt) => (\{
+    // ...
+\});
 
 ## Source
 

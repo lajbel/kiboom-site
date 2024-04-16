@@ -5,7 +5,9 @@ prev: false
 title: "ChildrenDefinition"
 ---
 
-> **ChildrenDefinition**\<`T`\>: `Object`
+```ts
+type ChildrenDefinition<T>: {};
+```
 
 ## Type parameters
 

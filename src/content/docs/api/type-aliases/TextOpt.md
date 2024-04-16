@@ -5,7 +5,14 @@ prev: false
 title: "TextOpt"
 ---
 
-> **TextOpt**: `Object`
+```ts
+type TextOpt: {
+  text: string;
+  textAlign: TextAlign;
+  textFont: string;
+  textSize: number;
+};
+```
 
 The options of the text object
 
@@ -14,10 +21,10 @@ The options of the text object
 | Member | Type | Description |
 | :------ | :------ | :------ |
 | `text` | `string` | The text to display |
-| `textAlign` | `TextAlign` | The align of the text |
+| `textAlign` | [`TextAlign`]( https://kaboomjs.com/#TextAlign ) | The align of the text |
 | `textFont` | `string` | The font of the text |
 | `textSize` | `number` | The size of the text |
 
 ## Source
 
-kiboom.d.ts:100
+kiboom.d.ts:128

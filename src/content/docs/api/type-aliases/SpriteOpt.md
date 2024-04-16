@@ -5,7 +5,11 @@ prev: false
 title: "SpriteOpt"
 ---
 
-> **SpriteOpt**: `Object`
+```ts
+type SpriteOpt: {
+  sprite: string;
+};
+```
 
 The options of the sprite object
 
@@ -17,4 +21,4 @@ The options of the sprite object
 
 ## Source
 
-kiboom.d.ts:89
+kiboom.d.ts:117

@@ -5,7 +5,9 @@ prev: false
 title: "makeCircle"
 ---
 
-> **makeCircle**(`opt`): `GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md)\>
+```ts
+makeCircle(opt): GameObj<BaseComps & RenderComps>
+```
 
 Make an object with a circle component.
 *Maker extends [makeRender](../../../../../api/functions/makerender)*
@@ -14,11 +16,11 @@ Make an object with a circle component.
 
 | Parameter | Type |
 | :------ | :------ |
-| `opt` | [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md) & [`CircleOpt`](../type-aliases/CircleOpt.md) |
+| `opt` | [`ObjOpt`](/api/type-aliases/objopt/) & [`RenderOpt`](/api/type-aliases/renderopt/) & [`CircleOpt`](/api/type-aliases/circleopt/) |
 
 ## Returns
 
-`GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md)\>
+[`GameObj`](https://kaboomjs.com/#GameObj)\<[`BaseComps`](/api/type-aliases/basecomps/) & [`RenderComps`](/api/type-aliases/rendercomps/)\>
 
 ## Example
 

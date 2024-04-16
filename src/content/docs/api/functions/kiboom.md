@@ -5,18 +5,20 @@ prev: false
 title: "kiboom"
 ---
 
-> **kiboom**(`k`): [`KiboomPlugin`](../interfaces/KiboomPlugin.md)
+```ts
+kiboom(k): KiboomPlugin
+```
 
 ## Parameters
 
 | Parameter | Type |
 | :------ | :------ |
-| `k` | `KaboomCtx` |
+| `k` | [`KaboomCtx`]( https://kaboomjs.com/ ) |
 
 ## Returns
 
-[`KiboomPlugin`](../interfaces/KiboomPlugin.md)
+`KiboomPlugin`
 
 ## Source
 
-kiboom.d.ts:122
+kiboom.d.ts:150

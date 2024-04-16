@@ -5,7 +5,9 @@ prev: false
 title: "makeObject"
 ---
 
-> **makeObject**(`opt`): `GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md)\>
+```ts
+makeObject(opt): GameObj<BaseComps>
+```
 
 Make an object with the base components.
 
@@ -13,11 +15,11 @@ Make an object with the base components.
 
 | Parameter | Type |
 | :------ | :------ |
-| `opt` | [`ObjOpt`](../type-aliases/ObjOpt.md) |
+| `opt` | [`ObjOpt`](/api/type-aliases/objopt/) |
 
 ## Returns
 
-`GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md)\>
+[`GameObj`](https://kaboomjs.com/#GameObj)\<[`BaseComps`](/api/type-aliases/basecomps/)\>
 
 ## Example
 

@@ -5,7 +5,9 @@ prev: false
 title: "makeArea"
 ---
 
-> **makeArea**(`opt`): `GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & `AreaComp`\>
+```ts
+makeArea(opt): GameObj<BaseComps & AreaComp>
+```
 
 Make an object with a collider component.
 *Maker extends [makeObject](../../../../../api/functions/makeobject)*
@@ -14,11 +16,11 @@ Make an object with a collider component.
 
 | Parameter | Type |
 | :------ | :------ |
-| `opt` | [`ObjOpt`](../type-aliases/ObjOpt.md) & [`AreaOpt`](../type-aliases/AreaOpt.md) |
+| `opt` | [`ObjOpt`](/api/type-aliases/objopt/) & [`AreaOpt`](/api/type-aliases/areaopt/) |
 
 ## Returns
 
-`GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & `AreaComp`\>
+[`GameObj`](https://kaboomjs.com/#GameObj)\<[`BaseComps`](/api/type-aliases/basecomps/) & `AreaComp`\>
 
 ## Example
 

@@ -5,7 +5,9 @@ prev: false
 title: "makeText"
 ---
 
-> **makeText**(`opt`): `GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `TextComp`\>
+```ts
+makeText(opt): GameObj<BaseComps & RenderComps & TextComp>
+```
 
 Make an object with a text component.
 *Maker extends [makeRender](../../../../../api/functions/makerender)*
@@ -14,11 +16,11 @@ Make an object with a text component.
 
 | Parameter | Type |
 | :------ | :------ |
-| `opt` | [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md) & [`TextOpt`](../type-aliases/TextOpt.md) |
+| `opt` | [`ObjOpt`](/api/type-aliases/objopt/) & [`RenderOpt`](/api/type-aliases/renderopt/) & [`TextOpt`](/api/type-aliases/textopt/) |
 
 ## Returns
 
-`GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `TextComp`\>
+[`GameObj`](https://kaboomjs.com/#GameObj)\<[`BaseComps`](/api/type-aliases/basecomps/) & [`RenderComps`](/api/type-aliases/rendercomps/) & `TextComp`\>
 
 ## Example
 

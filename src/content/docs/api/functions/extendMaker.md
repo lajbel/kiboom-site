@@ -5,7 +5,12 @@ prev: false
 title: "extendMaker"
 ---
 
-> **extendMaker**\<`TBaseComps`, `TBaseOpt`, `TNewComps`, `TNewOpt`\>(`baseMaker`, `defaultOpt`, `componentsApply`, `baseDefaultOpt`?): [`MakerFN`](../type-aliases/MakerFN.md)\<`TNewOpt` & `TBaseOpt`, `TNewComps` & `TBaseComps`\>
+```ts
+extendMaker<TBaseComps, TBaseOpt, TNewComps, TNewOpt>(
+   baseMaker, 
+   defaultOpt, 
+componentsApply): MakerFN<TNewOpt & TBaseOpt, TNewComps & TBaseComps>
+```
 
 Extend a maker with new components.
 
@@ -20,16 +25,15 @@ Extend a maker with new components.
 
 ## Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `baseMaker` | [`MakerFN`](../type-aliases/MakerFN.md)\<`TBaseOpt`, `TBaseComps`\> |
-| `defaultOpt` | [`OptionFN`](../type-aliases/OptionFN.md)\<`TNewOpt`\> |
-| `componentsApply` | [`ApplierFN`](../type-aliases/ApplierFN.md)\<`TNewComps`, `TNewOpt` & `TBaseOpt`\> |
-| `baseDefaultOpt`? | [`OptionalOptionFN`](../type-aliases/OptionalOptionFN.md)\<`TBaseOpt`\> |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `baseMaker` | [`MakerFN`](/api/type-aliases/makerfn/)\<`TBaseOpt`, `TBaseComps`\> | The base maker to extend. Example: makeObject |
+| `defaultOpt` | [`OptionFN`](/api/type-aliases/optionfn/)\<`TNewOpt`\> \| [`OptionFN`](/api/type-aliases/optionfn/)\<`TNewOpt` & `TBaseOpt`\> | An options object created with [makeOptions](../../../../../api/functions/makeoptions) |
+| `componentsApply` | [`ApplierFN`](/api/type-aliases/applierfn/)\<`TNewComps`, `TNewOpt` & `TBaseOpt`\> | - |
 
 ## Returns
 
-[`MakerFN`](../type-aliases/MakerFN.md)\<`TNewOpt` & `TBaseOpt`, `TNewComps` & `TBaseComps`\>
+[`MakerFN`](/api/type-aliases/makerfn/)\<`TNewOpt` & `TBaseOpt`, `TNewComps` & `TBaseComps`\>
 
 ## Source
 

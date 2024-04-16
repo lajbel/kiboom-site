@@ -5,7 +5,15 @@ prev: false
 title: "ObjOpt"
 ---
 
-> **ObjOpt**: `Object`
+```ts
+type ObjOpt: {
+  anchor: Anchor | Vec2;
+  pos: Vec2;
+  rotate: number;
+  tags: string[];
+  z: number;
+};
+```
 
 The base options of all object makers
 
@@ -13,12 +21,12 @@ The base options of all object makers
 
 | Member | Type | Description |
 | :------ | :------ | :------ |
-| `anchor` | `Anchor` \| `Vec2` | Anchor point of the object |
-| `pos` | `Vec2` | Position of the object |
+| `anchor` | [`Anchor`]( https://kaboomjs.com/#Anchor ) \| [`Vec2`]( https://kaboomjs.com/#Vec2 ) | Anchor point of the object |
+| `pos` | [`Vec2`]( https://kaboomjs.com/#Vec2 ) | Position of the object |
 | `rotate` | `number` | The rotation of the object |
 | `tags` | `string`[] | Tags of the object |
 | `z` | `number` | The z index of the object |
 
 ## Source
 
-kiboom.d.ts:18
+kiboom.d.ts:46

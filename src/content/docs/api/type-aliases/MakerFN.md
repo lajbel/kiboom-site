@@ -5,14 +5,24 @@ prev: false
 title: "MakerFN"
 ---
 
-> **MakerFN**\<`TOpt`, `TComps`\>: (`opt`) => `GameObj`\<`TComps`\>
+```ts
+type MakerFN<TOpt, TComps>: (opt) => GameObj<TComps>;
+```
+
+A function that creates a Game Object.
+
+## Example
+
+```js
+makeArea();
+```
 
 ## Type parameters
 
-| Type parameter |
-| :------ |
-| `TOpt` |
-| `TComps` |
+| Type parameter | Description |
+| :------ | :------ |
+| `TOpt` | The options to create the object. |
+| `TComps` | The components that the object will have. |
 
 ## Parameters
 
@@ -22,8 +32,8 @@ title: "MakerFN"
 
 ## Returns
 
-`GameObj`\<`TComps`\>
+[`GameObj`](https://kaboomjs.com/#GameObj)\<`TComps`\>
 
 ## Source
 
-kiboom.d.ts:8
+kiboom.d.ts:19

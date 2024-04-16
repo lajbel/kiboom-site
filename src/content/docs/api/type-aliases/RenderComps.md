@@ -5,8 +5,10 @@ prev: false
 title: "RenderComps"
 ---
 
-> **RenderComps**: `ColorComp` \| `OpacityComp` \| `ScaleComp`
+```ts
+type RenderComps: ColorComp | OpacityComp | ScaleComp;
+```
 
 ## Source
 
-kiboom.d.ts:54
+kiboom.d.ts:82

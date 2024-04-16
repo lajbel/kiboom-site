@@ -5,7 +5,9 @@ prev: false
 title: "children"
 ---
 
-> **children**(`childrens`): `EmptyComp`
+```ts
+children(childrens): EmptyComp
+```
 
 A component for define a childrens
 
@@ -13,7 +15,7 @@ A component for define a childrens
 
 | Parameter | Type |
 | :------ | :------ |
-| `childrens` | [`ChildrenDefinition`](../type-aliases/ChildrenDefinition.md)\<`Comp`[]\> |
+| `childrens` | [`ChildrenDefinition`](/api/type-aliases/childrendefinition/)\<`Comp`[]\> |
 
 ## Returns
 

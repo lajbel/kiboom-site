@@ -5,10 +5,17 @@ prev: false
 title: "BaseComps"
 ---
 
-> **BaseComps**: `PosComp` \| `AnchorComp` \| `RotateComp` \| `ZComp` \| `StateComp`
+```ts
+type BaseComps: 
+  | PosComp
+  | AnchorComp
+  | RotateComp
+  | ZComp
+  | StateComp;
+```
 
 The components of the base object
 
 ## Source
 
-kiboom.d.ts:31
+kiboom.d.ts:59

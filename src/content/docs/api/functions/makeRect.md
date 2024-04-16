@@ -5,7 +5,9 @@ prev: false
 title: "makeRect"
 ---
 
-> **makeRect**(`opt`): `GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `RectComp`\>
+```ts
+makeRect(opt): GameObj<BaseComps & RenderComps & RectComp>
+```
 
 Make an object with a rectangle component.
 *Maker extends [makeRender](../../../../../api/functions/makerender)*
@@ -14,19 +16,18 @@ Make an object with a rectangle component.
 
 | Parameter | Type |
 | :------ | :------ |
-| `opt` | [`ObjOpt`](../type-aliases/ObjOpt.md) & [`RenderOpt`](../type-aliases/RenderOpt.md) & [`RectOpt`](../type-aliases/RectOpt.md) |
+| `opt` | [`ObjOpt`](/api/type-aliases/objopt/) & [`RenderOpt`](/api/type-aliases/renderopt/) & [`RectOpt`](/api/type-aliases/rectopt/) |
 
 ## Returns
 
-`GameObj`\<[`BaseComps`](../type-aliases/BaseComps.md) & [`RenderComps`](../type-aliases/RenderComps.md) & `RectComp`\>
+[`GameObj`](https://kaboomjs.com/#GameObj)\<[`BaseComps`](/api/type-aliases/basecomps/) & [`RenderComps`](/api/type-aliases/rendercomps/) & `RectComp`\>
 
 ## Example
 
 ```js
 const rect = k.add(k.makeRect(\{
-    width: 100,       // from makeRect
-    height: 100,      // from makeRect
-    color: "#ff00ff", // from makeRender
+    size: k.vec2(50, 50)  // from makeRect
+    color: "#ff00ff",     // from makeRender
 \}));
 
 @group Object Makers
