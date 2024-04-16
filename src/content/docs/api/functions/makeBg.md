@@ -5,7 +5,7 @@ prev: false
 title: "makeBg"
 ---
 
-> **makeBg**(`opt`?): [`GameObj`](https://kaboomjs.com/#GameObj)\<[`BaseComps`](/api/type-aliases/basecomps/) & [`RenderComps`](/api/type-aliases/rendercomps/) & `RectComp`\>
+> **makeBg**(`opt`?): [`GameObj`](https://kaboomjs.com/#GameObj)\<[`BaseComps`](/api/type-aliases/basecomps/) & [`RenderComps`](/api/type-aliases/rendercomps/) & [`RectComp`]( https://kaboomjs.com/#RectComp )\>
 
 Make a color background object.
 *Maker extends [makeRender](../../../../../api/functions/makerender)*
@@ -18,7 +18,7 @@ Make a color background object.
 
 ## Returns
 
-[`GameObj`](https://kaboomjs.com/#GameObj)\<[`BaseComps`](/api/type-aliases/basecomps/) & [`RenderComps`](/api/type-aliases/rendercomps/) & `RectComp`\>
+[`GameObj`](https://kaboomjs.com/#GameObj)\<[`BaseComps`](/api/type-aliases/basecomps/) & [`RenderComps`](/api/type-aliases/rendercomps/) & [`RectComp`]( https://kaboomjs.com/#RectComp )\>
 
 ## Source
 

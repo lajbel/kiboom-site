@@ -11,12 +11,12 @@ Extend a maker with new components.
 
 ## Type parameters
 
-| Type parameter |
-| :------ |
-| `TBaseComps` |
-| `TBaseOpt` |
-| `TNewComps` |
-| `TNewOpt` |
+| Type parameter | Description |
+| :------ | :------ |
+| `TBaseComps` | The base components from the base maker |
+| `TBaseOpt` | The base options from the base maker |
+| `TNewComps` | The new components added to the base |
+| `TNewOpt` | The new options added to the base |
 
 ## Parameters
 
@@ -29,6 +29,8 @@ Extend a maker with new components.
 ## Returns
 
 [`MakerFN`](/api/type-aliases/makerfn/)\<`TNewOpt` & `TBaseOpt`, `TNewComps` & `TBaseComps`\>
+
+A new maker with the new components and options
 
 ## Source
 

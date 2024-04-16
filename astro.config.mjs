@@ -16,6 +16,8 @@ let kaboomDoc = {
     "OpacityComp": "https://kaboomjs.com/#OpacityComp",
     "KaboomCtx": "https://kaboomjs.com/",
     "ZComp": "https://kaboomjs.com/#ZComp",
+    "RectComp": "https://kaboomjs.com/#RectComp",
+    "AreaComp": "https://kaboomjs.com/#AreaComp",
 };
 
 // https://astro.build/config

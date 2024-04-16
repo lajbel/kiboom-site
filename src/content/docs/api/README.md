@@ -9,7 +9,6 @@ title: "kiboom"
 
 - [kiboom](/api/functions/kiboom/)
 - [makeCircle](/api/functions/makecircle/)
-- [makeRect](/api/functions/makerect/)
 - [makeSprite](/api/functions/makesprite/)
 - [makeText](/api/functions/maketext/)
 
@@ -43,6 +42,7 @@ title: "kiboom"
 
 - [makeArea](/api/functions/makearea/)
 - [makeObject](/api/functions/makeobject/)
+- [makeRect](/api/functions/makerect/)
 - [makeRender](/api/functions/makerender/)
 
 ## Options

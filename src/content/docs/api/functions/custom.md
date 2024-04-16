@@ -7,7 +7,7 @@ title: "custom"
 
 > **custom**\<`T`\>(`custom`): `Comp` & `T`
 
-A component for define a custom component
+A component for define a custom component.
 
 ## Type parameters
 
