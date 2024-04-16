@@ -5,9 +5,7 @@ prev: false
 title: "makeOptions"
 ---
 
-```ts
-makeOptions<T>(opt): OptionFN<T>
-```
+> **makeOptions**\<`T`\>(`opt`): [`OptionFN`](/api/type-aliases/optionfn/)\<`T`\>
 
 Create a options object
 

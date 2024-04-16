@@ -5,9 +5,7 @@ prev: false
 title: "makeRect"
 ---
 
-```ts
-makeRect(opt): GameObj<BaseComps & RenderComps & RectComp>
-```
+> **makeRect**(`opt`): [`GameObj`](https://kaboomjs.com/#GameObj)\<[`BaseComps`](/api/type-aliases/basecomps/) & [`RenderComps`](/api/type-aliases/rendercomps/) & `RectComp`\>
 
 Make an object with a rectangle component.
 *Maker extends [makeRender](../../../../../api/functions/makerender)*

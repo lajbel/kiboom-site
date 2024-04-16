@@ -7,9 +7,7 @@ title: "kiScene"
 
 `Alpha`
 
-```ts
-kiScene<T>(name, def): () => void
-```
+> **kiScene**\<`T`\>(`name`, `def`): () => `void`
 
 Create an scene with an SceneManager
 

@@ -5,9 +5,7 @@ prev: false
 title: "RenderComps"
 ---
 
-```ts
-type RenderComps: ColorComp | OpacityComp | ScaleComp;
-```
+> **RenderComps**: [`ColorComp`]( https://kaboomjs.com/#ColorComp ) \| [`OpacityComp`]( https://kaboomjs.com/#OpacityComp ) \| [`ScaleComp`]( https://kaboomjs.com/#ScaleComp )
 
 ## Source
 

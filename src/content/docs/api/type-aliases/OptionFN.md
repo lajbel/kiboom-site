@@ -5,9 +5,7 @@ prev: false
 title: "OptionFN"
 ---
 
-```ts
-type OptionFN<TOpt>: (k) => TOpt;
-```
+> **OptionFN**\<`TOpt`\>: (`k`) => `TOpt`
 
 A function made with [makeOptions](../../../../../api/functions/makeoptions)
 

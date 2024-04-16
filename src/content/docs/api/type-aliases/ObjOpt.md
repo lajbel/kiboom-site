@@ -5,15 +5,7 @@ prev: false
 title: "ObjOpt"
 ---
 
-```ts
-type ObjOpt: {
-  anchor: Anchor | Vec2;
-  pos: Vec2;
-  rotate: number;
-  tags: string[];
-  z: number;
-};
-```
+> **ObjOpt**: \{`anchor`: [`Anchor`]( https://kaboomjs.com/#Anchor ) \| [`Vec2`]( https://kaboomjs.com/#Vec2 );`pos`: [`Vec2`]( https://kaboomjs.com/#Vec2 );`rotate`: `number`;`tags`: `string`[];`z`: `number`;  }
 
 The base options of all object makers
 

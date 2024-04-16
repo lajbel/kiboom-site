@@ -5,11 +5,7 @@ prev: false
 title: "BackgroundOpt"
 ---
 
-```ts
-type BackgroundOpt: {
-  size: Vec2;
-};
-```
+> **BackgroundOpt**: \{`size`: [`Vec2`]( https://kaboomjs.com/#Vec2 );  }
 
 The options of the background object
 

@@ -5,9 +5,7 @@ prev: false
 title: "kiboom"
 ---
 
-```ts
-kiboom(k): KiboomPlugin
-```
+> **kiboom**(`k`): `KiboomPlugin`
 
 ## Parameters
 

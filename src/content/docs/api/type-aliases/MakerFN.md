@@ -5,9 +5,7 @@ prev: false
 title: "MakerFN"
 ---
 
-```ts
-type MakerFN<TOpt, TComps>: (opt) => GameObj<TComps>;
-```
+> **MakerFN**\<`TOpt`, `TComps`\>: (`opt`) => [`GameObj`](https://kaboomjs.com/#GameObj)\<`TComps`\>
 
 A function that creates a Game Object.
 

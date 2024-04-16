@@ -5,9 +5,7 @@ prev: false
 title: "ChildrenDefinition"
 ---
 
-```ts
-type ChildrenDefinition<T>: {};
-```
+> **ChildrenDefinition**\<`T`\>: \{}
 
 ## Type parameters
 

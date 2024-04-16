@@ -5,9 +5,7 @@ prev: false
 title: "makeObject"
 ---
 
-```ts
-makeObject(opt): GameObj<BaseComps>
-```
+> **makeObject**(`opt`): [`GameObj`](https://kaboomjs.com/#GameObj)\<[`BaseComps`](/api/type-aliases/basecomps/)\>
 
 Make an object with the base components.
 

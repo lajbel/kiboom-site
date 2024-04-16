@@ -5,9 +5,7 @@ prev: false
 title: "children"
 ---
 
-```ts
-children(childrens): EmptyComp
-```
+> **children**(`childrens`): `EmptyComp`
 
 A component for define a childrens
 

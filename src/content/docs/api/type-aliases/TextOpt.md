@@ -5,14 +5,7 @@ prev: false
 title: "TextOpt"
 ---
 
-```ts
-type TextOpt: {
-  text: string;
-  textAlign: TextAlign;
-  textFont: string;
-  textSize: number;
-};
-```
+> **TextOpt**: \{`text`: `string`;`textAlign`: [`TextAlign`]( https://kaboomjs.com/#TextAlign );`textFont`: `string`;`textSize`: `number`;  }
 
 The options of the text object
 

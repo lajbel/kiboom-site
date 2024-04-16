@@ -5,9 +5,7 @@ prev: false
 title: "ApplierFN"
 ---
 
-```ts
-type ApplierFN<TComps, TOpt>: (opt, k) => CompList<TComps>;
-```
+> **ApplierFN**\<`TComps`, `TOpt`\>: (`opt`, `k`) => `CompList`\<`TComps`\>
 
 A function that applies components to a Game Object.
 

@@ -5,9 +5,7 @@ prev: false
 title: "makeCircle"
 ---
 
-```ts
-makeCircle(opt): GameObj<BaseComps & RenderComps>
-```
+> **makeCircle**(`opt`): [`GameObj`](https://kaboomjs.com/#GameObj)\<[`BaseComps`](/api/type-aliases/basecomps/) & [`RenderComps`](/api/type-aliases/rendercomps/)\>
 
 Make an object with a circle component.
 *Maker extends [makeRender](../../../../../api/functions/makerender)*

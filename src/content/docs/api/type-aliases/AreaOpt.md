@@ -5,11 +5,7 @@ prev: false
 title: "AreaOpt"
 ---
 
-```ts
-type AreaOpt: {
-  size: Vec2;
-};
-```
+> **AreaOpt**: \{`size`: [`Vec2`]( https://kaboomjs.com/#Vec2 );  }
 
 The options of the area object
 

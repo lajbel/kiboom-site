@@ -15,9 +15,7 @@ title: "SceneState"
 
 ### new SceneState(name, saveData)
 
-```ts
-new SceneState<T>(name, saveData?): SceneState<T>
-```
+> **new SceneState**\<`T`\>(`name`, `saveData`?): [`SceneState`](/api/classes/scenestate/)\<`T`\>
 
 #### Parameters
 
@@ -38,9 +36,7 @@ kiboom.d.ts:143
 
 ### changeScene()
 
-```ts
-changeScene(scene, ...args): void
-```
+> **changeScene**(`scene`, ...`args`): `void`
 
 #### Parameters
 
@@ -61,9 +57,7 @@ kiboom.d.ts:148
 
 ### getData()
 
-```ts
-getData(key, defaultValue?): T[keyof T]
-```
+> **getData**(`key`, `defaultValue`?): `T`\[keyof `T`\]
 
 #### Parameters
 
@@ -84,9 +78,7 @@ kiboom.d.ts:145
 
 ### saveSceneData()
 
-```ts
-saveSceneData(): void
-```
+> **saveSceneData**(): `void`
 
 #### Returns
 
@@ -100,9 +92,7 @@ kiboom.d.ts:146
 
 ### setBackgroundMusic()
 
-```ts
-setBackgroundMusic(music, options): void
-```
+> **setBackgroundMusic**(`music`, `options`): `void`
 
 #### Parameters
 
@@ -123,9 +113,7 @@ kiboom.d.ts:147
 
 ### setPersistentData()
 
-```ts
-setPersistentData(data): void
-```
+> **setPersistentData**(`data`): `void`
 
 #### Parameters
 

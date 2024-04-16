@@ -5,11 +5,7 @@ prev: false
 title: "SpriteOpt"
 ---
 
-```ts
-type SpriteOpt: {
-  sprite: string;
-};
-```
+> **SpriteOpt**: \{`sprite`: `string`;  }
 
 The options of the sprite object
 

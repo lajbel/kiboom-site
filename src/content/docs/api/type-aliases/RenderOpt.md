@@ -5,13 +5,7 @@ prev: false
 title: "RenderOpt"
 ---
 
-```ts
-type RenderOpt: {
-  color: string;
-  opacity: number;
-  scale: Vec2;
-};
-```
+> **RenderOpt**: \{`color`: `string`;`opacity`: `number`;`scale`: [`Vec2`]( https://kaboomjs.com/#Vec2 );  }
 
 The options of the render object
 

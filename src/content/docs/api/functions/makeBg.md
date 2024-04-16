@@ -5,9 +5,7 @@ prev: false
 title: "makeBg"
 ---
 
-```ts
-makeBg(opt?): GameObj<BaseComps & RenderComps & RectComp>
-```
+> **makeBg**(`opt`?): [`GameObj`](https://kaboomjs.com/#GameObj)\<[`BaseComps`](/api/type-aliases/basecomps/) & [`RenderComps`](/api/type-aliases/rendercomps/) & `RectComp`\>
 
 Make a color background object.
 *Maker extends [makeRender](../../../../../api/functions/makerender)*

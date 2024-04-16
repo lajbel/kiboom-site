@@ -5,9 +5,7 @@ prev: false
 title: "makeArea"
 ---
 
-```ts
-makeArea(opt): GameObj<BaseComps & AreaComp>
-```
+> **makeArea**(`opt`): [`GameObj`](https://kaboomjs.com/#GameObj)\<[`BaseComps`](/api/type-aliases/basecomps/) & `AreaComp`\>
 
 Make an object with a collider component.
 *Maker extends [makeObject](../../../../../api/functions/makeobject)*

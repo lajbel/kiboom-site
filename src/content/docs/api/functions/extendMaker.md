@@ -5,12 +5,7 @@ prev: false
 title: "extendMaker"
 ---
 
-```ts
-extendMaker<TBaseComps, TBaseOpt, TNewComps, TNewOpt>(
-   baseMaker, 
-   defaultOpt, 
-componentsApply): MakerFN<TNewOpt & TBaseOpt, TNewComps & TBaseComps>
-```
+> **extendMaker**\<`TBaseComps`, `TBaseOpt`, `TNewComps`, `TNewOpt`\>(`baseMaker`, `defaultOpt`, `componentsApply`): [`MakerFN`](/api/type-aliases/makerfn/)\<`TNewOpt` & `TBaseOpt`, `TNewComps` & `TBaseComps`\>
 
 Extend a maker with new components.
 

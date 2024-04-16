@@ -5,9 +5,7 @@ prev: false
 title: "makeSprite"
 ---
 
-```ts
-makeSprite(opt): GameObj<BaseComps & RenderComps & SpriteComp>
-```
+> **makeSprite**(`opt`): [`GameObj`](https://kaboomjs.com/#GameObj)\<[`BaseComps`](/api/type-aliases/basecomps/) & [`RenderComps`](/api/type-aliases/rendercomps/) & [`SpriteComp`]( https://kaboomjs.com/#SpriteComp )\>
 
 Make an object with a sprite component.
 *Maker extends [makeRender](../../../../../api/functions/makerender)*

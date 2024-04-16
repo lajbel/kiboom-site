@@ -5,9 +5,7 @@ prev: false
 title: "makeMaker"
 ---
 
-```ts
-makeMaker<TComps, TOpt>(defaultOpt, componentsApply): MakerFN<TOpt, TComps>
-```
+> **makeMaker**\<`TComps`, `TOpt`\>(`defaultOpt`, `componentsApply`): [`MakerFN`](/api/type-aliases/makerfn/)\<`TOpt`, `TComps`\>
 
 Make an object maker. This is used internally for [makeObject](../../../../../api/functions/makeobject),
 but we recommend using [extendMaker](../../../../../api/functions/extendmaker) instead if you want to

@@ -5,9 +5,7 @@ prev: false
 title: "custom"
 ---
 
-```ts
-custom<T>(custom): Comp & T
-```
+> **custom**\<`T`\>(`custom`): `Comp` & `T`
 
 A component for define a custom component
 

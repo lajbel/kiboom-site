@@ -5,9 +5,7 @@ prev: false
 title: "makeRender"
 ---
 
-```ts
-makeRender(opt?): GameObj<BaseComps & RenderComps>
-```
+> **makeRender**(`opt`?): [`GameObj`](https://kaboomjs.com/#GameObj)\<[`BaseComps`](/api/type-aliases/basecomps/) & [`RenderComps`](/api/type-aliases/rendercomps/)\>
 
 Make an object with a color and opacity components.
 *Maker extends [makeObject](../../../../../api/functions/makeobject)*

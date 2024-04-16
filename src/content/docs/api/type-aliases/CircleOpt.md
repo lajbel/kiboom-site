@@ -5,11 +5,7 @@ prev: false
 title: "CircleOpt"
 ---
 
-```ts
-type CircleOpt: {
-  radius: number;
-};
-```
+> **CircleOpt**: \{`radius`: `number`;  }
 
 The options of the circle object
 
