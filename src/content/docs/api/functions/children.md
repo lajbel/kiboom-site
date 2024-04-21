@@ -7,7 +7,7 @@ title: "children"
 
 > **children**(`childrens`): `EmptyComp`
 
-A component for define a childrens
+A component for define a childrens/home/lajbel/gh/kiboom/src
 
 ## Parameters
 

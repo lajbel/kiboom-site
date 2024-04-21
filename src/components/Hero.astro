@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import type { Props } from "@astrojs/starlight/props"
 import CallToAction from "@astrojs/starlight/components/CallToAction.astro"
+import { PackageManagers } from 'starlight-package-managers'
 
 const PAGE_TITLE_ID = "_top"
 
@@ -48,12 +49,16 @@ if (image) {
 			<h1 id={PAGE_TITLE_ID} data-page-title set:html={title} />
 			{tagline && <div class="tagline" set:html={tagline} />}
 		</div>
+
+		
+		<PackageManagers pkg="kiboom" pkgManagers={["npm", "pnpm", "yarn", "bun", "ni" ]}/>
 		{
 			actions.length > 0 && (
 				<div class="sl-flex actions">
 					{actions.map(({ text, ...attrs }) => (
 						<CallToAction {...attrs} set:html={text} />
 					))}
+
 				</div>
 			)
 		}

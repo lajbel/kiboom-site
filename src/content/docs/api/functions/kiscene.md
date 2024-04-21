@@ -2,12 +2,12 @@
 editUrl: false
 next: false
 prev: false
-title: "kiScene"
+title: "kiscene"
 ---
 
 `Alpha`
 
-> **kiScene**\<`T`\>(`name`, `def`): () => `void`
+> **kiscene**\<`T`\>(`name`, `def`): () => `void`
 
 Create an scene with an SceneManager
 

@@ -58,7 +58,7 @@ title: "kiboom"
 
 ## Scenes
 
-- [kiScene](/api/functions/kiscene/)
+- [kiscene](/api/functions/kiscene/)
 
 ## Type Aliases
 

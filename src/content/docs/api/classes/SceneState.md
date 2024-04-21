@@ -5,6 +5,8 @@ prev: false
 title: "SceneState"
 ---
 
+A helper class to manage the state of a scene.
+
 ## Type parameters
 
 | Type parameter |
@@ -30,7 +32,7 @@ title: "SceneState"
 
 #### Source
 
-kiboom.d.ts:143
+kiboom.d.ts:146
 
 ## Methods
 
@@ -38,12 +40,14 @@ kiboom.d.ts:143
 
 > **changeScene**(`scene`, ...`args`): `void`
 
+Change the scene to the given scene saving the current scene data.
+
 #### Parameters
 
-| Parameter | Type |
-| :------ | :------ |
-| `scene` | `string` |
-| ...`args` | `any`[] |
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `scene` | `string` | The name of the scene to go to |
+| ...`args` | `any`[] | Arguments for scene |
 
 #### Returns
 
@@ -51,13 +55,15 @@ kiboom.d.ts:143
 
 #### Source
 
-kiboom.d.ts:148
+kiboom.d.ts:164
 
 ***
 
 ### getData()
 
 > **getData**(`key`, `defaultValue`?): `T`\[keyof `T`\]
+
+Get the persistent data of the scene.
 
 #### Parameters
 
@@ -72,7 +78,7 @@ kiboom.d.ts:148
 
 #### Source
 
-kiboom.d.ts:145
+kiboom.d.ts:152
 
 ***
 
@@ -80,19 +86,23 @@ kiboom.d.ts:145
 
 > **saveSceneData**(): `void`
 
+Save the persistent data of the scene.
+
 #### Returns
 
 `void`
 
 #### Source
 
-kiboom.d.ts:146
+kiboom.d.ts:156
 
 ***
 
 ### setBackgroundMusic()
 
 > **setBackgroundMusic**(`music`, `options`): `void`
+
+Sets a background music for the scene.
 
 #### Parameters
 
@@ -107,13 +117,15 @@ kiboom.d.ts:146
 
 #### Source
 
-kiboom.d.ts:147
+kiboom.d.ts:160
 
 ***
 
 ### setPersistentData()
 
 > **setPersistentData**(`data`): `void`
+
+Set the persistent data
 
 #### Parameters
 
@@ -127,7 +139,7 @@ kiboom.d.ts:147
 
 #### Source
 
-kiboom.d.ts:144
+kiboom.d.ts:148
 
 ## Properties
 
